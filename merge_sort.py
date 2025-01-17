@@ -1,8 +1,3 @@
-from Testing_array import test_array
-import numpy as np
-
-A = test_array
-print(A)
 def Merge(A, p, q, r):
     n_L = q - p
     n_R = r - q
@@ -29,7 +24,6 @@ def Merge(A, p, q, r):
         j += 1
         k += 1
 
-
 def Merge_sort(A, p, r):
     if p >= r-1:
         return
@@ -37,7 +31,3 @@ def Merge_sort(A, p, r):
     Merge_sort(A, p, q)
     Merge_sort(A, q, r)
     Merge(A, p, q, r)
-
-
-Merge_sort(A=A, p=0, r=len(A))
-print(A)
